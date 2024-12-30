@@ -1,0 +1,187 @@
+{
+  "main": {
+    "id": "da037776a2f552c3",
+    "type": "split",
+    "children": [
+      {
+        "id": "9f9c87136213a9bf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "17b6b0d072a5f438",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "01-项目介绍.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01-项目介绍"
+            }
+          },
+          {
+            "id": "b46a6f62f7511d08",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "02-技术选型.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02-技术选型"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5b75075fb91d368e",
+    "type": "split",
+    "children": [
+      {
+        "id": "16351a121beb33cf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9e1a0d341f601e0f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "fe1c4dc9c6d1a2fd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "78dc40a74366caf6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a0f127353968593a",
+    "type": "split",
+    "children": [
+      {
+        "id": "6868165540a7aa68",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb9995e0a13c5a51",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "02-技术选型.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "02-技术选型 的反向链接列表"
+            }
+          },
+          {
+            "id": "8462439bc38096ac",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "02-技术选型.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "02-技术选型 的出链列表"
+            }
+          },
+          {
+            "id": "99d88a3aa0c04757",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "459a24ca11e63c00",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "02-技术选型.md"
+              },
+              "icon": "lucide-list",
+              "title": "02-技术选型 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "b46a6f62f7511d08",
+  "lastOpenFiles": [
+    "01-项目介绍.md",
+    "02-技术选型.md",
+    "03-业务",
+    "扩展目标.md"
+  ]
+}
