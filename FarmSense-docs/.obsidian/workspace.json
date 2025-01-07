@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02-技术选型.md",
+                "file": "03-业务/01-帖子相关.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02-技术选型"
+              "title": "01-帖子相关"
             }
           }
         ],
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02-技术选型.md",
+                "file": "03-业务/01-帖子相关.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +118,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "02-技术选型 的反向链接列表"
+              "title": "01-帖子相关 的反向链接列表"
             }
           },
           {
@@ -127,12 +127,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02-技术选型.md",
+                "file": "03-业务/01-帖子相关.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "02-技术选型 的出链列表"
+              "title": "01-帖子相关 的出链列表"
             }
           },
           {
@@ -154,10 +154,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02-技术选型.md"
+                "file": "03-业务/01-帖子相关.md"
               },
               "icon": "lucide-list",
-              "title": "02-技术选型 的大纲"
+              "title": "01-帖子相关 的大纲"
             }
           }
         ]
@@ -180,6 +180,7 @@
   "active": "b46a6f62f7511d08",
   "lastOpenFiles": [
     "01-项目介绍.md",
+    "03-业务/01-帖子相关.md",
     "02-技术选型.md",
     "03-业务",
     "扩展目标.md"
