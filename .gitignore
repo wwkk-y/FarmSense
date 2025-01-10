@@ -2,8 +2,9 @@
 /data/IP102_v1.1
 /yolov5-pro/pests/images/*
 /yolov5-pro/pests/annotations/*
+/yolov5-pro/pests/labels/*
 /yolov5-pro/pests.zip
-/yolov5.zip
+yolov5.zip
 
 ignore.*
 
