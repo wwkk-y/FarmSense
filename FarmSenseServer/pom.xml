@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--项目相关信息-->
+    <groupId>com.fss</groupId>
+    <artifactId>farm-sense-server</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>farm-sense-server</name>
+    <description>farm-sense-server</description>
+    <packaging>pom</packaging>
+
+    <!--当前项目做为springboot子项目启动-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.5</version>
+        <relativePath/>
+    </parent>
+
+    <!--版本信息-->
+    <properties>
+        <spring-boot.version>2.7.5</spring-boot.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+
+        <hutool.version>5.8.9</hutool.version>
+
+        <!--常用子模块-->
+        <fss-common.version>0.0.1-SNAPSHOT</fss-common.version>
+        <fss-security.version>0.0.1-SNAPSHOT</fss-security.version>
+
+        <!--数据库-->
+        <mysql-connector.version>8.0.29</mysql-connector.version>
+        <druid.version>1.2.14</druid.version>
+        <mybatis.version>3.5.10</mybatis.version>
+        <pagehelper-starter.version>1.4.5</pagehelper-starter.version>
+        <pagehelper.version>5.3.2</pagehelper.version>
+
+        <!--swagger相关-->
+        <springfox-swagger.version>3.0.0</springfox-swagger.version>
+        <swagger-models.version>1.6.0</swagger-models.version>
+        <swagger-annotations.version>1.6.0</swagger-annotations.version>
+
+        <jjwt.version>0.9.1</jjwt.version>
+
+        <!--RocketMQ-->
+        <rocket-mq.version>2.2.2</rocket-mq.version>
+
+        <!--spring cloud alibaba-->
+        <cloud-alibaba.version>2021.0.5.0</cloud-alibaba.version>
+        <spring-cloud.version>2021.0.5</spring-cloud.version>
+    </properties>
+
+    <dependencies>
+        <!--aop-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <!--校验参数用的-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--Hutool Java工具包-->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>${hutool.version}</version>
+            </dependency>
+
+            <!--常用子模块-->
+            <dependency>
+                <groupId>com.fss</groupId>
+                <artifactId>fss-common</artifactId>
+                <version>${fss-common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fss</groupId>
+                <artifactId>fss-security</artifactId>
+                <version>${fss-security.version}</version>
+            </dependency>
+
+            <!--Mysql数据库驱动-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector.version}</version>
+            </dependency>
+            <!--集成druid连接池-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <!-- MyBatis-->
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+            <!--MyBatis分页插件starter-->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper-starter.version}</version>
+            </dependency>
+            <!--MyBatis分页插件-->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper</artifactId>
+                <version>${pagehelper.version}</version>
+            </dependency>
+
+            <!--Swagger-UI API文档生产工具-->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-boot-starter</artifactId>
+                <version>${springfox-swagger.version}</version>
+            </dependency>
+            <!--解决Swagger访问主页时的NumberFormatException问题-->
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-models</artifactId>
+                <version>${swagger-models.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${swagger-annotations.version}</version>
+            </dependency>
+
+            <!--JWT(Json Web Token)登录支持-->
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jjwt.version}</version>
+            </dependency>
+
+            <!--RocketMQ-->
+            <dependency>
+                <groupId>org.apache.rocketmq</groupId>
+                <artifactId>rocketmq-spring-boot-starter</artifactId>
+                <version>${rocket-mq.version}</version>
+            </dependency>
+
+            <!--spring cloud-->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${cloud-alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!--使用aliyun的Maven镜像源提升下载速度-->
+    <repositories>
+        <repository>
+            <id>aliyunmaven</id>
+            <name>aliyun</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+        </repository>
+        <repository>
+            <id>central2</id>
+            <name>central2</name>
+            <url>https://repo1.maven.org/maven2/</url>
+        </repository>
+    </repositories>
+
+    <!--子模块-->
+    <modules>
+        <module>fss-security</module>
+        <module>fss-common</module>
+        <module>fss-ums</module>
+        <module>fss-keep-alive</module>
+        <module>fss-cms</module>
+    </modules>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <!--未解析的插件: 'org.apache.maven.plugins:maven-clean-plugin:3.2.0-->
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>3.1.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>
