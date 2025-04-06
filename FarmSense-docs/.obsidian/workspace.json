@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04-后端/01-聊天相关.md",
+                "file": "02-技术选型.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01-聊天相关"
+              "title": "02-技术选型"
             }
           }
         ],
@@ -109,8 +109,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "01-项目介绍.md",
-                "collapseAll": false,
+                "file": "02-技术选型.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "01-项目介绍 的反向链接列表"
+              "title": "02-技术选型 的反向链接列表"
             }
           },
           {
@@ -165,8 +165,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,11 +179,11 @@
   },
   "active": "b46a6f62f7511d08",
   "lastOpenFiles": [
-    "04-后端/03-帖子相关.md",
-    "04-后端/01-聊天相关.md",
     "03-图像识别/01-环境配置.md",
-    "01-项目介绍.md",
     "02-技术选型.md",
+    "01-项目介绍.md",
+    "04-后端/01-聊天相关.md",
+    "04-后端/03-帖子相关.md",
     "_file/{AA9BF5CC-3CC7-496B-B770-05B48E428D75}.png",
     "_file",
     "_file/f6ba3a8c832bf6b0db1e3bb6054dc0af.png",
